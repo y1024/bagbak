@@ -39,7 +39,7 @@ Options:
   -H, --host <host>         connect to remote frida-server on HOST
   -d, --debug               enable debug output
   -o, --output <output>     ipa filename or directory to dump to
-  --remove-keys <keys>      additional Info.plist keys to remove (comma-separated)
+  --remove-keys <keys>      Info.plist keys to remove (comma-separated)
   -h, --help                display help for command
 ```
 
@@ -59,4 +59,4 @@ Example:
 * `bagbak -l` to list all apps
 * `bagbak com.google.chrome.ios` to dump app to `com.google.chrome.ios-[version].ipa`
 * `bagbak com.google.chrome.ios main` to dump only the main binary
-* `bagbak --remove-keys UISupportedDevices,UIRequiredDeviceCapabilities com.google.chrome.ios` to remove extra Info.plist keys
+* `bagbak --remove-keys UISupportedDevices com.google.chrome.ios` to remove device restrictions from Info.plist

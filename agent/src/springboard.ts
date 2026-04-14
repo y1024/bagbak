@@ -172,9 +172,7 @@ rpc.exports = {
         infoPlistURL,
       );
 
-    if (dict) {
-      // it's ok to duplicate, removeObjectForKey_ silently fails
-      removeKeys.push("UISupportedDevices");
+    if (dict && removeKeys.length > 0) {
       for (const key of removeKeys) {
         dict.removeObjectForKey_(key);
       }

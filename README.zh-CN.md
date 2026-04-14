@@ -39,7 +39,7 @@ Options:
   -H, --host <host>         连接到指定主机的远程 frida-server
   -d, --debug               启用调试输出
   -o, --output <output>     ipa 文件名或输出目录
-  --remove-keys <keys>      额外需要移除的 Info.plist 键 (逗号分隔)
+  --remove-keys <keys>      需要移除的 Info.plist 键 (逗号分隔)
   -h, --help                显示帮助信息
 ```
 
@@ -59,7 +59,7 @@ Options:
 * `bagbak -l` 列出所有应用
 * `bagbak com.google.chrome.ios` 解密应用并输出到 `com.google.chrome.ios-[version].ipa`
 * `bagbak com.google.chrome.ios main` 仅解密主应用二进制文件
-* `bagbak --remove-keys UISupportedDevices,UIRequiredDeviceCapabilities com.google.chrome.ios` 移除额外的 Info.plist 键
+* `bagbak --remove-keys UISupportedDevices com.google.chrome.ios` 移除 Info.plist 中的设备限制
 
 <p align="center">想看更多中文技术分享？欢迎关注我的公众号</p>
 <p align="center"><image src="images/weixin.jpg" width="240" /></p>

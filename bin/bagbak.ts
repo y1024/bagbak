@@ -76,7 +76,7 @@ async function main() {
 
     .option("-d, --debug", "enable debug output")
     .option("-o, --output <output>", "ipa filename or directory")
-    .option("--remove-keys <keys>", "additional Info.plist keys to remove (comma-separated)")
+    .option("--remove-keys <keys>", "Info.plist keys to remove (comma-separated)")
     .argument("[target]", "bundle id or name")
     .argument("[mode]", "dump mode: all, main (app), extensions (ext, exts), binaries (bin, executables)", "all")
     .version(version());
