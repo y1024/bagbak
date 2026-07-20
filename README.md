@@ -12,6 +12,16 @@ Tested on iOS 15 (Dopamine) and iOS 16 (palera1n).
 
 *The name of this project doesn't have any meaning. I was just listening to that song while typing.*
 
+## Deprecation
+
+This decryption approach is no longer recommended. It requires running the target app, which is limited by the target SDK, RASP, etc. The `mremap_encrypted` approach does not require running the app at all.
+
+Alternatives based on `mremap_encrypted`:
+
+- [UnFairPlay](https://github.com/subdiox/UnFairPlay) (with a tweak, it also works on jailbroken iOS)
+- [unfaird](https://github.com/Lakr233/unfaird)
+- [macOSAppstoreDecrypter](https://github.com/34306/macOSAppstoreDecrypter)
+
 ## Prerequisites
 
 **Note:** bagbak@5 requires frida@17. If your frida-server is v16, use `npm install -g bagbak@4` instead.

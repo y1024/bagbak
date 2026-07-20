@@ -12,6 +12,14 @@
 
 *这个项目的名字没有任何含义，我写代码的时候正在听那首歌。*
 
+## 本项目即将废弃
+
+推荐基于 `mremap_encrypted` 的方案：
+
+- [UnFairPlay](https://github.com/subdiox/UnFairPlay)（配合 tweak 可在越狱 iOS 上使用）
+- [unfaird](https://github.com/Lakr233/unfaird)
+- [macOSAppstoreDecrypter](https://github.com/34306/macOSAppstoreDecrypter)
+
 ## 环境要求
 
 **注意：** bagbak@5 需要 frida@17。如果你的 frida-server 是 v16，请使用 `npm install -g bagbak@4`。
